@@ -1,4 +1,5 @@
 import LocaleSwitcher from '@/components/LocaleSwitcher';
+import { ThemeSwitch } from '@/components/ThemeSwitch';
 import { useTranslations } from 'next-intl';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
 			<h1 className='text-4xl font-bold text-center mt-8'>{t('title')}</h1>
 			<p className='text-lg text-center mt-4'>{t('subtitle')}</p>
 			<LocaleSwitcher />
+			<ThemeSwitch />
 		</main>
 	);
 }
