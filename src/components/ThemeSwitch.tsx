@@ -1,6 +1,7 @@
 'use client';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import { Button } from './Button';
 
 export const ThemeSwitch = () => {
 	const { theme, setTheme } = useTheme();
@@ -14,5 +15,5 @@ export const ThemeSwitch = () => {
 
 	if (!mounted) return null;
 
-	return <button onClick={toggleTheme}>{theme} Mode</button>;
+	return <Button onClick={toggleTheme}>{theme} Mode</Button>;
 };
